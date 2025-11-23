@@ -254,7 +254,7 @@ This keeps ~3 months of compressed logs.
 
  - Docker host is a Debian 13 VPS.
  
- - I use **Zoraxy** as reverse-proxy:
+ - I use **Zoraxy** as reverse-proxy:  
  `aio.cloud.domain.tld` ==> `nextcloud-aio-mastercontainer:8080` (endpoint requires https/SSL + ignore cert validity)  
  `cloud.domain.tld` ==> `nextcloud-aio-apache:11000` (endpoint is plain http/no-SSL)
 <img width="1116" height="252" alt="Capture d&#39;écran 2025-11-23 115811" src="https://github.com/user-attachments/assets/0377e737-3759-45be-a8c4-231557c12e0f" />
