@@ -1,0 +1,10 @@
+/var/log/onlyoffice-auto-fix.log {
+    daily
+    rotate 90
+    size 5M
+    missingok
+    notifempty
+    compress
+    delaycompress
+    copytruncate
+}
