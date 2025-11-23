@@ -1,0 +1,7 @@
+[Unit]
+Description=Auto-fix OnlyOffice for Nextcloud AIO
+After=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/onlyoffice-auto-fix.sh
