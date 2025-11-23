@@ -50,10 +50,21 @@ This document proposes a complete, reliable, automated workaround.
 
 ## Summary of the Solution
 
-### 0. (Optional) Set “Availability check interval” to **0 minutes**
-In the ONLYOFFICE admin panel:
 
-**Settings → ONLYOFFICE → Availability check interval → set to `0`**
+### 0. (Optional) Set “editors_check_interval” to **0** via OCC
+
+There is no GUI option anymore for this in the ONLYOFFICE admin panel,  
+so you have to use the CLI (occ) inside the Nextcloud container:
+
+```bash
+docker exec -it nextcloud-aio-nextcloud \
+  sudo -E -u www-data php occ config:system:set onlyoffice editors_check_interval --value=0
+
+docker exec -it nextcloud-aio-nextcloud \
+  sudo -E -u www-data php occ config:system:get onlyoffice editors_check_interval
+```
+
+
 
 This reduces periodic background checks,  
 **BUT on its own it does *not* fix the nightly-backup issue.**
