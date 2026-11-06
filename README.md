@@ -1,3 +1,4 @@
+# THIS REPO IS NO LONGER MAINTAINED AS I NO LONGER USE ONLYOFFICE BACKEND (in favor of EuroOffice)
 
 # Automatically Recover ONLYOFFICE After Nextcloud AIO Nightly Backups
 *A complete workaround using systemd timers, bash scripting, logrotate,  
